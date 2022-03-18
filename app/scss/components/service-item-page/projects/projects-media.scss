@@ -1,0 +1,29 @@
+@include l {
+  .projects {
+    .row {
+      border-radius: 12px 0 12px 12px;
+    }
+
+    &__item, &__item-lower-row {
+      .projects__inner-wrap {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+@include s {
+  .projects {
+    .container {
+      padding: 0 20px;
+    }
+
+    &__item, &__item-lower-row {
+      min-height: 140px;
+
+      .projects__prjct-name {
+        font-size: $font-size-l;
+      }
+    }
+  }
+}

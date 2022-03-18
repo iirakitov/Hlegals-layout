@@ -1,0 +1,264 @@
+@mixin xxl () {
+  @media (max-width: $max-width-xxl) {
+    @content;
+  }
+}
+
+@mixin xl () {
+  @media (max-width: $max-width-xl) {
+    @content;
+  }
+}
+
+@mixin l () {
+  @media (max-width: $max-width-l) {
+    @content;
+  }
+}
+
+@mixin m () {
+  @media (max-width: $max-width-m) {
+    @content;
+  }
+}
+
+@mixin s () {
+  @media (max-width: $max-width-s) {
+    @content;
+  }
+}
+
+
+@mixin norms-bold($f-size) {
+  @extend %font-weight-bold;
+  font-size: $f-size;
+}
+
+@mixin norms-medium($f-size) {
+  @extend %font-weight-medium;
+  font-size:  $f-size;
+}
+
+@mixin  norms-regular($f-size) {
+  @extend %font-weight-rugular;
+  font-size: $f-size;
+}
+
+@mixin slider-btn () {
+
+  .about-us__slider-btn-wrap {
+    position: absolute;
+    bottom: -20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-us__slider-btn {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $bright-blue;
+  }
+
+  .carousel-item {
+    padding: 60px 0 20px;
+
+    h2 {
+      padding-bottom: 15px;
+      @include norms-regular($font-size-xll);
+      color: transparent;
+      background-clip: text;
+      background-color: inherit;
+      background-image: linear-gradient(90deg, $soft-pink, $heavy-pink)
+    }
+
+    h3 {
+      @include norms-regular($font-size-xll);
+      color: $white;
+      padding-bottom: 20px;
+    }
+
+    p {
+      @include norms-regular($font-size-l);
+      color: $white;
+    }
+  }
+}
+
+@mixin services-item () {
+  .services {
+
+    &__item-icon {
+      width: 92px;
+      height: 92px;
+      background-color: $white;
+      border-radius: 24px;
+
+      img {
+        width: 64px;
+      }
+    }
+
+    &__item-heading {
+      margin: 20px 0 15px;
+
+      a {
+        @include norms-regular($font-size-xl-heading);
+        color: $bright-blue;
+
+        &:hover {
+          color: $heavy-pink;
+        }
+
+        &:active {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &__text {
+      @include norms-regular($font-size-l);
+      color: $white;
+      margin: 0;
+    }
+  }
+}
+
+@mixin slider-btn-class () {
+
+  .slider-btn {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $bright-blue;
+  }
+}
+
+@mixin project-item ($height,$padding) {
+  min-height: $height;
+  border: 1px solid $white;
+
+
+    .projects__heading {
+      padding: 20px 20px 20px;
+      border-bottom: 1px solid $white;
+
+      h2 {
+        @include norms-bold($font-size-sm);
+        color: $heavy-pink;
+        text-transform: uppercase;
+      }
+    }
+
+  .projects__inner-wrap {
+      padding: $padding;
+      height: 100%;
+
+    }
+
+  .projects__prjct-name {
+      @include norms-bold($font-size-xl-heading);
+      color: $purple-txt;
+    }
+
+  .projects__client {
+      padding-top: 20px;
+      @include norms-regular($font-size-l);
+      color: $grey;
+    }
+}
+
+@mixin project-item-lower ($height,$padding) {
+
+  min-height: $height;
+  border: 1px solid $white;
+
+  .projects__inner-wrap {
+    padding: $padding;
+    height: 100%;
+
+  }
+
+  .projects__prjct-name {
+    @include norms-bold($font-size-xl-heading);
+    color: $purple-txt;
+  }
+
+  .projects__client {
+    padding-top: 20px;
+    @include norms-regular($font-size-l);
+    color: $grey;
+  }
+}
+
+@mixin partner-item () {
+  height: 120px;
+
+  a {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@mixin publications-item () {
+  margin-bottom: 40px;
+  border-radius: 8px;
+  background-color: $white;
+
+  .publications__item-picture {
+    img {
+      width: 100%;
+    }
+  }
+
+  .publications__item-wrap-txt {
+    padding: 20px;
+
+    a {
+      @include norms-regular($font-size-l);
+      color: $bright-blue;
+      transition: .5s;
+
+      &:hover {
+        color: $heavy-pink;
+      }
+    }
+
+    .publications__item-date {
+      @include norms-bold($font-size-s);
+      color: $grey;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding-bottom: 20px;
+      border-bottom: 4px solid $light-grey;
+    }
+
+    .publications__item-article {
+      @include norms-regular($font-size-m);
+    }
+  }
+}
+
+@mixin grey-circle () {
+  content: '';
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: $grey;
+  vertical-align: middle;
+}
+
+@mixin gradient-wrap {
+  @extend %gradient-wrap;
+  background: $bg-gradient-2;
+
+
+  &:after {
+    background-color: $soft-purple;
+  }
+
+  &:before {
+    background-color: $soft-light-purple;
+  }
+}

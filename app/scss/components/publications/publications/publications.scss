@@ -1,0 +1,62 @@
+.main {
+  background-color: $bg-gray-item;
+}
+
+.publications {
+  margin-top: 58px;
+
+  &__switcher {
+    padding: 40px 0;
+  }
+
+  &__switcher-wrap {
+    background-color: $light-grey;
+    padding: 2px;
+    border-radius: 10px;
+
+    li {
+      @include norms-medium($font-size-l);
+      color: $dark-purple;
+      padding: 7px 45px;
+      list-style: none;
+
+      &:first-child {
+        background-color: $white;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  &__column {
+    width: 30%;
+  }
+
+  &__item {
+    @include publications-item ();
+  }
+
+  &__btn {
+    padding: 40px 0 60px;
+  }
+
+  &__btn-wrap {
+    a {
+      display: inline-block;
+      padding: 16px 70px;
+      border-radius: 12px;
+      background-color: $bright-blue;
+      color: $white;
+      box-shadow: $box-shadow-for-btn;
+      transition: .5s;
+
+      &:hover {
+        background-color: $middle-blue;
+      }
+
+      &:active {
+        background-color: $dark-blue;
+      }
+    }
+  }
+}
+

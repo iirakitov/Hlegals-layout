@@ -1,0 +1,140 @@
+.header {
+  padding-top: 50px;
+
+  a {
+    color: $grey;
+  }
+
+  &__top-line {
+    @extend %justify-flex-end;
+  }
+
+  &__lang-switcher {
+    label {
+      input {
+        display: none;
+      }
+
+      span {
+        @include norms-bold($font-size-s);
+        @extend %pointer;
+        padding: 5px;
+        transition: .3s;
+        color: $grey
+      }
+
+      input:checked + span {
+        background-color: $heavy-pink;
+        border-radius: 8px;
+        color: $white;
+      }
+    }
+  }
+
+  &__address {
+    a {
+      @include norms-regular($font-size-m);
+    }
+  }
+
+  &__phone-num {
+    a {
+      @include norms-bold($font-size-m);
+      transition: 0.3s;
+
+      &:hover {
+        color: $heavy-pink;
+      }
+    }
+  }
+
+  &__line-items-wrap {
+    position: absolute;
+    z-index: 1;
+
+    & > div:not(:last-child):after {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $grey;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+    & > div:not(:last-child) {
+      padding-right: 10px;
+    }
+  }
+
+  &__nav-wrap {
+    padding-top: 22px;
+    width: 100%;
+
+    a {
+      @include norms-medium($font-size-l);
+      color: $bright-blue;
+      margin: 0 7px;
+      transition: 0.3s;
+
+      &:hover {
+        color: $heavy-pink;
+        border-bottom: 1px solid $heavy-pink;
+      }
+    }
+  }
+
+  &__socials {
+    svg {
+      width: 24px;
+      height: 24px;
+
+
+      path {
+        fill: $grey;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        path {
+          fill: $heavy-pink;
+        }
+      }
+    }
+
+  }
+
+  &__about-us-text {
+    padding-left: 26px;
+    span {
+      @include norms-medium($font-size-xxxl);
+      color: $dark-purple;
+      position: absolute;
+      top: 0;
+
+      &:before {
+        content: '';
+        background-image: url("./../images/logo/Slash.svg");
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 22px;
+        height: 48px;
+        position: absolute;
+        top: 5px;
+        left: -23px;
+      }
+
+      &:after {
+        content: '';
+        background-image: url("./../images/logo/short-p.svg");
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 41px;
+        height: 48px;
+        position: absolute;
+        top: 5px;
+      }
+    }
+  }
+}

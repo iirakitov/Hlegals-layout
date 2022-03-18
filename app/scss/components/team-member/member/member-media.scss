@@ -1,0 +1,48 @@
+@include l {
+  .member {
+
+    &__email {
+
+      &:before, &:after {
+        display: none;
+      }
+    }
+
+    &__info {
+      padding-left: 0;
+    }
+
+    &__linkedin, &__photo {
+      padding: 0;
+    }
+  }
+}
+
+@include m {
+  .member {
+    .row {
+      padding: 0 60px;
+    }
+  }
+}
+
+@include s {
+  .member {
+    margin: 20px 0 40px;
+    .row {
+      padding: 0 15px;
+    }
+
+    &__name {
+      h2 {
+        font-size: $font-size-xxl;
+      }
+    }
+
+    &__text {
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@include xxl {
+  .banner {
+    &__img {
+      h1 {
+        background-position: center calc(50% + 90px);
+      }
+    }
+  }
+}
+
+@include xl {
+  .banner {
+    &__img {
+      h1 {
+        background-position: center calc(50% + 65px);
+      }
+    }
+  }
+}
+
+
+@include l {
+  .banner {
+    &__img {
+      h1 {
+        background-position: center calc(50% + 50px);
+      }
+    }
+
+    &__btn-down {
+      bottom: 110px;
+    }
+  }
+}
+
+@include m {
+  .banner {
+    &__img {
+     background-image: none;
+      min-width: initial;
+      max-width: none;
+
+      h1 {
+        background-position: center calc(50% + 120px);
+        background-size: 120% 700px;
+        padding: 0 80px;
+      }
+    }
+  }
+}
+
+@include s {
+  .banner {
+    &__img {
+      background-image: none;
+
+      h1 {
+        //background-position: left -85px bottom 30px;
+        background-size: 650px;
+        //padding: 0 40px;
+      }
+    }
+
+    &__btn-down {
+      bottom: 35px;
+    }
+  }
+}
+

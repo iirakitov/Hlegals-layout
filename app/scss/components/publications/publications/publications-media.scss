@@ -1,0 +1,15 @@
+@include l {
+  .publications {
+    &__column {
+      width: 80%;
+    }
+  }
+}
+
+@include l {
+  .publications {
+    &__column {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+body {
+  font-family: 'TT Norms', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.keyboard {
+  min-height: 500px;
+  background: linear-gradient(180deg,rgba(50,50,100,.1) 0,#323264 100%), url("./../images/keyboard-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.gradient-wrap {
+  background: $bg-gradient-2;
+  position: relative;
+  border-radius: 0 0 12px 12px;
+
+  &:after {
+    content: '';
+    height: 10px;
+    background-color: $soft-purple;
+    width: 98%;
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    border-radius: 0 0 12px 12px;
+  }
+
+  &:before {
+    content: '';
+    height: 10px;
+    background-color: $soft-light-purple;
+    position: absolute;
+    bottom: -20px;
+    width: 96%;
+    right: 2%;
+    left: 2%;
+    border-radius: 0 0 12px 12px;
+  }
+}

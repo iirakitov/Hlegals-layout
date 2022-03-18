@@ -1,0 +1,108 @@
+@include l {
+  .header {
+    padding-top: 20px;
+
+    .container {
+      padding: 0 20px;
+    }
+
+    .header__collapsed-block {
+      position: initial;
+    }
+
+    &__nav {
+      padding-top: 20px;
+
+      .navbar-brand {
+        img {
+          width: 80px;
+        }
+      }
+    }
+
+    &__nav-btn {
+      padding: 0;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("./../images/icons/hamburger-dark.svg");
+    }
+
+    &__line-items-wrap {
+      position: inherit;
+
+
+      & > div:not(:last-child):after {
+        display: none;
+      }
+
+      & > div:not(:last-child) {
+        padding: 0;
+      }
+    }
+
+    &__phone-num {
+      a {
+        color: $grey;
+      }
+    }
+
+    &__lang-switcher {
+      label {
+        span {
+          color: $grey;
+        }
+
+        input:checked + span {
+          color: $white;
+        }
+      }
+    }
+
+    &__collapsed-block {
+      position: relative;
+
+      .header__nav-wrap {
+        background-color: $middle-purple;
+        width: 200px;
+        padding: 20px 0;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        border: 1px solid $white;
+        border-radius: 15px;
+        box-shadow: 0 0 8px 0px $white;
+
+        .nav-link:hover {
+          color: $heavy-pink;
+        }
+      }
+    }
+
+    &__about-us-text {
+
+      span {
+        font-size: $font-size-ll;
+        left: 100px;
+        top: 17px;
+
+        &:before {
+          background-size: cover;
+          height: 24px;
+          width: 11px;
+          left: -15px;
+        }
+
+        &:after {
+          background-size: cover;
+          height: 24px;
+          width: 21px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.projects {
+  padding-top: 60px;
+
+  .row {
+    border-radius: 12px;
+    background-color: $bg-gray-item;
+  }
+
+  &__item {
+    @include project-item($min-height-upper-row, $padding-inner-project-upper);
+  }
+
+  &__item-lower-row {
+    @include project-item-lower($min-height-lower-row, $padding-inner-project-lower);
+  }
+}

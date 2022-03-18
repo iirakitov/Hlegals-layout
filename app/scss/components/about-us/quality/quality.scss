@@ -1,0 +1,24 @@
+.quality {
+  margin-top: 80px;
+  padding-bottom: 93px;
+
+  .row {
+    padding: 0 100px;
+  }
+
+  &__heading-wrap {
+    padding: 0;
+  }
+
+  &__text-wrap {
+    padding: 0 40px 0 0;
+    p {
+      @include norms-regular($font-size-xl);
+    }
+  }
+
+  &__heading {
+    @include norms-bold($font-size-mega-xxl);
+    @extend %gradient-text-reverse;
+  }
+}

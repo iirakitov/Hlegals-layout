@@ -1,0 +1,39 @@
+@include xxl {
+  .contact-form {
+    .row {
+      padding: 0 100px;
+    }
+  }
+}
+
+@include xl {
+  .contact-form {
+    .row {
+      padding: 0 10px;
+    }
+  }
+}
+
+@include l {
+  .contact-form {
+    margin: 20px 0 40px;
+
+    .row {
+      padding: 0 15px;
+    }
+
+    &__contacts {
+      padding: 0;
+    }
+
+    &__form {
+      margin-top: 40px;
+    }
+
+    &__form-wrap {
+      h2 {
+        font-size: $font-size-xll;
+      }
+    }
+  }
+}

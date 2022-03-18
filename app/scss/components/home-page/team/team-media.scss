@@ -1,0 +1,55 @@
+@include xl {
+  .team {
+    &__slider-txt {
+      padding: 40px 20px 0;
+    }
+  }
+}
+
+@include l {
+  .team {
+    &__slider-item-wrap {
+      max-height: none;
+      padding: 20px;
+    }
+
+    &__slider-txt {
+      padding: 0;
+    }
+
+    &__photo-wrap {
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__photo-txt {
+      padding-left: 10px;
+    }
+  }
+}
+
+@include m {
+  .team {
+    &__txt-heading {
+      h2 {
+        font-size: $font-size-xxl;
+      }
+    }
+
+    &__photo-wrap {
+      width: 200px;
+    }
+  }
+}
+
+@include s {
+  .team {
+    &__photo-wrap {
+      width: 100px;
+    }
+  }
+}

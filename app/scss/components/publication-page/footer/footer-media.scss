@@ -1,0 +1,36 @@
+@include l {
+  .footer {
+
+    &__contacts {
+      padding-bottom: 0;
+    }
+
+    &__address {
+      padding: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &__phone {
+      margin-bottom: 20px;
+      &:after, &:before {
+        display: none;
+      }
+    }
+
+    &__facebook {
+      margin-bottom: 20px;
+    }
+
+    &__email {
+      margin-bottom: 20px;
+    }
+
+    &__copyright {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}

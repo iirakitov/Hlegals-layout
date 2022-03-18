@@ -1,0 +1,38 @@
+@include l {
+  .publications {
+
+
+    &__wrapper {
+      max-height: unset;
+    }
+
+    &__column {
+      width: 100%;
+    }
+
+    &__gradient {
+      background: none;
+      position: relative;
+      height: 100px;
+    }
+
+    &__item {
+      .publications__item-wrap-txt {
+        .publications__item-date {
+          margin: 0;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+@include s {
+  .publications {
+    &__heading-wrap {
+      h2 {
+        font-size: $font-size-xxl;
+      }
+    }
+  }
+}

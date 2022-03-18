@@ -1,0 +1,62 @@
+@include xxl {
+  .about-us {
+    &__tab-btn {
+      font-size: $font-size-xxxl;
+    }
+    &__text-panel {
+
+      h3 {
+        font-size: $font-size-xxl-media;
+      }
+
+      p {
+        font-size: $font-size-l;
+      }
+    }
+  }
+}
+
+@include xl {
+  .about-us {
+    .row {
+      padding: 0 90px;
+    }
+
+    &__tab-btn {
+      font-size: $font-size-xxl;
+    }
+
+    &__text-panel {
+      padding: 30px 0 0 30px;
+
+      h3 {
+        font-size: $font-size-xll;
+      }
+
+      p {
+        font-size: $font-size-m;
+      }
+    }
+  }
+}
+
+@include l {
+  .about-us {
+   padding-top: 20px;
+  }
+}
+
+@include s {
+  .about-us {
+    .row {
+      padding: 0;
+      margin: 0;
+    }
+
+    .carousel-item {
+      h2 {
+        font-size: $font-size-sm;
+      }
+    }
+  }
+}

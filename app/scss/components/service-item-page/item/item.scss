@@ -1,0 +1,58 @@
+.item {
+  margin-bottom: -8px;
+
+  &__wrap {
+    z-index: 5;
+    position: absolute;
+    top: 167px;
+    width: 860px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &__icon {
+    width: 92px;
+    height: 92px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 24px;
+    background-color: $white;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+    h2 {
+      @include norms-bold($font-size-mega-xxl);
+      @extend %gradient-text-reverse;
+    }
+  }
+
+  &__text {
+    p {
+      @include norms-medium($font-size-xl);
+      color: $white;
+
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 40px;
+
+    a {
+      display: inline-block;
+      padding: 16px 30px;
+      @include norms-medium($font-size-sm);
+      color: $white;
+      border-radius: 12px;
+      background-color: $bright-blue;
+      transition: .5s;
+
+      &:hover {
+        box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+      }
+    }
+  }
+}

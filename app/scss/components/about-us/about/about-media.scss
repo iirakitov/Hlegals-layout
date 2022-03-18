@@ -1,0 +1,50 @@
+@include xl {
+  .about {
+    .row {
+      padding: 0;
+    }
+
+    &__heading {
+      h2 {
+        font-size: $font-size-xxxl;
+      }
+    }
+
+    &__paragraph-top, &__paragraph-bottom {
+      font-size: $font-size-l;
+    }
+  }
+}
+
+@include l {
+  .about {
+
+    &__heading {
+      h2 {
+        font-size: $font-size-xxl;
+      }
+    }
+
+    &__info {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    &__item-wrapper {
+      padding-top: 15px;
+      padding-left: 0;
+      border-left: none;
+      border-top: 4px solid $light-grey;
+    }
+  }
+}
+
+@include s {
+  .about {
+    margin-top: 20px;
+
+    .row {
+      padding: 0 15px;
+    }
+  }
+}

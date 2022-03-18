@@ -1,0 +1,12 @@
+@include s {
+  .partners {
+    &__item {
+      height: 90px;
+
+      img {
+        width: 80%;
+        height: 80%;
+      }
+    }
+  }
+}

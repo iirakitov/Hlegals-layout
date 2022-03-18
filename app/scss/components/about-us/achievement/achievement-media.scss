@@ -1,0 +1,33 @@
+@include l {
+  .achievement {
+    margin-top: 68px;
+
+    &__inner-wrap {
+      justify-content: center;
+    }
+
+    &__item {
+      width: 35%;
+      padding: 15px 0;
+    }
+  }
+}
+
+@include m {
+  .achievement {
+    &__item {
+
+      &:first-child {
+        img {
+          width: 70px;
+        }
+      }
+
+      &:nth-child(2) {
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+}

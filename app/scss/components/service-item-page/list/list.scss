@@ -1,0 +1,36 @@
+.gradient {
+  @include gradient-wrap;
+  //box-shadow: 0px -165px 80px 60px #323264;
+}
+
+.list {
+  padding-top: 220px;
+
+  &__wrapper {
+    padding-bottom: 80px;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+
+    h3 {
+      @include norms-medium($font-size-xl-heading);
+      color: $white;
+    }
+  }
+
+  &__left, &__right {
+    li {
+      color: $heavy-pink;
+
+      &:not(:last-child) {
+        padding-bottom: 20px;
+      }
+
+      span {
+        @include norms-regular($font-size-l);
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@include l {
+  .item {
+    &__wrap {
+      width: 750px;
+    }
+  }
+}
+
+@include m {
+  .item {
+
+    &__wrap {
+      width: 500px;
+    }
+
+    &__heading {
+      h2 {
+        font-size: $font-size-xxl;
+      }
+    }
+
+    &__text {
+      p {
+        font-size: $font-size-l;
+      }
+    }
+  }
+}
+
+@include s {
+  .item {
+
+    &__wrap {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+}
+

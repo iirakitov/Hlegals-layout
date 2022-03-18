@@ -1,0 +1,63 @@
+.about-us {
+  padding-top: 80px;
+
+  .row {
+    padding: 0 110px;
+  }
+  &__nav-form {
+    display: flex;
+  }
+
+  &__tab-btn {
+    @include norms-bold($font-size-mega-xxl);
+    color: $grey;
+    padding: 0 40px 0 0;
+    text-align: end;
+    border: none;
+    background-color: inherit;
+    border-right: 4px solid $light-grey;
+    transition: .5s;
+    outline: 0;
+
+    &:hover, &:focus, &:active {
+      //@extend %gradient-text;
+      border-color: $heavy-pink;
+      color: transparent;
+      background-clip: text;
+      background-color: inherit;
+      background-image: linear-gradient(90deg, $soft-pink, $heavy-pink)
+
+
+    }
+  }
+
+  .tab-content>.active {
+    transition: 2s;
+  }
+
+  &__text-panel {
+    padding: 50px 0 0 40px;
+
+    h3 {
+      @include norms-regular($font-size-xxl);
+      color: $white;
+    }
+
+    p {
+      @include  norms-regular($font-size-xl);
+      color: $white;
+      padding-top: 20px;
+    }
+  }
+
+  /* SLIDER FOR MEDIA */
+
+  &__slider {
+    display: none;
+    @include slider-btn ();
+  }
+
+  .carousel-indicators {
+    @include slider-btn-class();
+  }
+}

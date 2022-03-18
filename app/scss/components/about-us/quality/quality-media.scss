@@ -1,0 +1,32 @@
+@include l {
+  .quality {
+    .row, &__text-wrap {
+      padding: 0;
+    }
+
+    &__heading-wrap {
+      padding-top: 20px;
+    }
+  }
+}
+
+@include s {
+  .quality {
+    margin-top: 20px;
+    padding-bottom: 40px;
+
+    .row {
+      padding: 0 15px;
+    }
+
+    &__text-wrap {
+      p {
+        font-size: $font-size-l;
+      }
+    }
+
+    &__heading {
+      font-size: $font-size-xxl;
+    }
+  }
+}

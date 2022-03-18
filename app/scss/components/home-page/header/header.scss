@@ -1,0 +1,84 @@
+.header {
+  padding-top: 50px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  a {
+    color: $white;
+  }
+
+  &__top-line {
+    @extend %justify-flex-end;
+  }
+
+  &__lang-switcher {
+    label {
+      input {
+        display: none;
+      }
+
+      span {
+        @include norms-bold($font-size-s);
+        @extend %pointer;
+        padding: 5px;
+        transition: .3s;
+        color: $white
+      }
+
+      input:checked + span {
+        background-color: $heavy-pink;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  &__address {
+    a {
+      @include norms-regular($font-size-m);
+    }
+  }
+
+  &__phone-num {
+    a {
+      @include norms-bold($font-size-m);
+    }
+  }
+
+  &__line-items-wrap {
+    position: absolute;
+    z-index: 1;
+
+    & > div:not(:last-child):after {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $white;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+    & > div:not(:last-child) {
+      padding-right: 10px;
+    }
+  }
+
+  &__nav-wrap {
+    padding-top: 22px;
+    width: 100%;
+
+    a {
+      @include norms-regular($font-size-l);
+      padding: 0;
+      margin: 0 7px;
+
+      &:hover {
+        color: $heavy-pink;
+        border-bottom: 1px solid $heavy-pink;
+      }
+    }
+  }
+}

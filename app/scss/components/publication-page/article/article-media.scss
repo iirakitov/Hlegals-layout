@@ -1,0 +1,45 @@
+@include xl {
+  .article {
+    &__wrap {
+      padding: 0 110px;
+    }
+  }
+}
+
+@include l {
+  .article {
+    &__wrap {
+      padding: 0;
+    }
+
+    &__example {
+      padding: 0;
+    }
+  }
+}
+
+@include s {
+  .article {
+    &__heading-txt {
+      h3 {
+        font-size: $font-size-xll;
+      }
+    }
+
+    &__note {
+      span {
+        font-size: $font-size-xxl;
+      }
+    }
+
+    &__list {
+      h3 {
+        font-size: $font-size-l;
+      }
+    }
+
+    &__final-heding {
+      font-size: $font-size-l;
+    }
+  }
+}

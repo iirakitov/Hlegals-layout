@@ -1,0 +1,75 @@
+.footer {
+
+  &__wrapper {
+
+    padding-top: 30px;
+    background-color: $bg-gray-item;
+  }
+
+  &__top-line {
+    margin-bottom: 20px;
+  }
+
+  &__contacts {
+    padding-bottom: 40px;
+
+  }
+
+  &__address {
+    @include norms-medium($font-size-m);
+    color: $dark-purple;
+    padding-right: 19px;
+
+    &:after {
+      @include grey-circle ();
+      margin-left: 19px;
+    }
+  }
+
+  &__map-link {
+    a {
+      @include norms-bold($font-size-s);
+      text-transform: uppercase;
+      color: $bright-blue;
+    }
+  }
+
+  &__phone {
+    padding: 0 10px;
+
+    a {
+      @include norms-bold($font-size-m);
+      color: $dark-purple;
+    }
+
+    &:before {
+      @include grey-circle ();
+      margin-right: 7px;
+    }
+
+    &:after {
+      @include grey-circle ();
+      margin-left: 10px;
+    }
+  }
+
+  &__email {
+    a {
+      @include norms-bold($font-size-m);
+      color:$bright-blue;
+    }
+  }
+
+  &__copyright {
+    justify-content: flex-end;
+
+    p {
+      @include norms-medium($font-size-m);
+      color: $grey;
+    }
+
+    span {
+      padding-right: 5px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.services {
+  padding: 80px 0;
+
+  &__link {
+    a {
+      @include norms-regular ($font-size-sm);
+      color: $grey;
+    }
+  }
+
+  &__heading-txt {
+    h2 {
+      @include norms-bold($font-size-mega-xxl);
+      @extend %gradient-text-reverse;
+    }
+  }
+
+  &__items {
+    margin-top: 70px;
+    row-gap: 60px;
+  }
+
+  &__item-wrap {
+    width: 30%;
+    @include services-item ();
+  }
+}
